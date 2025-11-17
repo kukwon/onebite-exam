@@ -1,8 +1,14 @@
 import "./App.css";
+import { cn } from "./lib/utils";
 
 function App() {
+  const isActive = true;
   return (
-    <div className="bg-black text-4xl font-bold underline">Hello World</div>
+    <div>
+      <div className={cn(isActive ? "text-green-500" : "text-red-500")}>
+        isActive
+      </div>
+    </div>
   );
 }
 
